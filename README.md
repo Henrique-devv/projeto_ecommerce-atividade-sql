@@ -6,7 +6,16 @@ Este projeto simula o banco de dados de uma plataforma de vendas online, cobrind
 
 🗄️ Estrutura do Banco de Dados
 O banco é composto por 5 tabelas relacionadas entre si:
-TabelaDescriçãocategoriasAgrupamento dos produtosprodutosCatálogo com preço, estoque e statusclientesDados dos compradorespedidosRegistros de compras com status e totalitens_pedidoItens de cada pedido (relação N:N entre pedidos e produtos)avaliacoesNotas e comentários dos clientes sobre produtos
+
+Tabela                      Descrição
+categorias            Agrupamento dos produtos
+produtos              Catálogo com preço, estoque e status
+clientes              Dados dos compradores
+pedidos               Registros de compras com status e total
+itens_pedido          Itens de cada pedido (relação N:N entre pedidos e produtos)
+avaliacoes            Notas e comentários dos clientes sobre produtos
+
+
 Diagrama de Relacionamento
 categorias ──< produtos ──< itens_pedido >── pedidos >── clientes
                    │                                         │
@@ -30,14 +39,14 @@ categorias ──< produtos ──< itens_pedido >── pedidos >── cliente
 
 📊 Consultas de Análise Incluídas
 
-Total de pedidos e receita agrupados por status
-Top 5 produtos mais vendidos por quantidade
-Clientes com mais de um pedido (clientes fiéis)
-Média de avaliação por produto
-Receita mensal dos últimos 12 meses
-Produtos com estoque crítico (abaixo de 30 unidades)
-Clientes que nunca realizaram um pedido
-Ranking de categorias por receita com Window Function
+1.Total de pedidos e receita agrupados por status
+2.Top 5 produtos mais vendidos por quantidade
+3.Clientes com mais de um pedido (clientes fiéis)
+4.Média de avaliação por produto
+5.Receita mensal dos últimos 12 meses
+6.Produtos com estoque crítico (abaixo de 30 unidades)
+7.Clientes que nunca realizaram um pedido
+8.Ranking de categorias por receita com Window Function
 
 
 🚀 Como Executar
@@ -48,17 +57,17 @@ SQL Server Management Studio (SSMS) ou Azure Data Studio
 
 Passos
 
-Clone o repositório:
+1.Clone o repositório:
 
 bash   git clone https://github.com/Henrique-devv/projeto_ecommerce-atividade-sql.git
 
-Abra o arquivo projeto_ecommerce.sql no SSMS
-Crie um novo banco de dados e selecione-o:
+2.Abra o arquivo projeto_ecommerce.sql no SSMS
+3.Crie um novo banco de dados e selecione-o:
 
 sql   CREATE DATABASE ecommerce;
    USE ecommerce;
 
-Execute o script completo (F5 ou botão Execute)
+4.Execute o script completo (F5 ou botão Execute)
 
 
 🛠️ Tecnologias
@@ -68,3 +77,4 @@ GITHUB
 
 👤 Autor
 Feito por Henrique Carvalho — sinta-se à vontade para explorar meus outros projetos aqui no GitHub.
+
